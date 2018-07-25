@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+	"name":"test_run",
+	"version":"1.0",
+	"description":"test run for an extension",
+	"content_scripts": [
+		{
+			"matches": ["*://*.mozilla.org/*"],
+			"js": ["test_run.js"]
+		}
+	]
+	
+}
